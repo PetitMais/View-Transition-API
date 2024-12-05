@@ -3,3 +3,7 @@
     --baseline-status-color-outline: light-dark(#e71111, #4b0707);
     
 } */
+
+@view-transition {
+    navigation: auto;
+}
