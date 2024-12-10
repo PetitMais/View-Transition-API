@@ -4,9 +4,9 @@
     
 } */
 
-@view-transition {
+/* @view-transition {
     navigation: auto;
-}
+} */
 
 #transition {
   view-transition-name: exemple;
