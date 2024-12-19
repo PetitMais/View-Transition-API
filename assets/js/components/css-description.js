@@ -1,4 +1,4 @@
-class ViewTransition extends HTMLElement {
+class CSSDescription extends HTMLElement {
     static observedAttributes = ['content','url'];
 
     connectedCallback() {
@@ -17,4 +17,4 @@ class ViewTransition extends HTMLElement {
         console.log('Déconnecter');
     }
 }
-customElements.define("view-transition", ViewTransition);
+customElements.define("css-description", CSSDescription);
