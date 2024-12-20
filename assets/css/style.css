@@ -1,31 +1,88 @@
-/* baseline-status {
-    --baseline-status-color-limited: light-dark(#0027ea, #330966);
-    --baseline-status-color-outline: light-dark(#e71111, #4b0707);
-    
-} */
-
-@view-transition {
-    navigation: auto;
+/* Palette de couleur */
+:root {
+  --white: #F0FBFA;
+  --black: #111C1B;
+  --blue: #87E3DA;
+  --indigo: #76AAD0;
 }
 
-#transition {
+/* transition description.html -- exemple.html */
+@view-transition {
+  navigation: auto;
+}
+
+.transition {
   view-transition-name: exemple;
 }
 
-h1{
-  width: fit-content;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-}
-
-/* Apply the custom animation to the old and new page states */
 ::view-transition-old(exemple) {
-animation: 0.4s ease-in both ;
+  animation: 0.4s ease-in both;
 }
 
 ::view-transition-new(exemple) {
-animation: 0.4s ease-in both ;
+  animation: 0.4s ease-in both;
 }
+
+/* css pages */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5px;
+  margin-top: 110px;
+  height: 100svh;
+  display: grid;
+  justify-items: center;
+  font-family: "Gill Sans", sans-serif;
+  background-color: var(--white);
+}
+
+css-description,
+css-exemple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+code{
+  background-color: #e3e0e0;
+}
+
+h1 {
+  width: fit-content;
+}
+
+p {
+  padding: 10px;
+}
+
+
+.grid {
+  display: grid;
+  grid-gap: 15px;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  justify-content: center;
+  justify-items: center;
+}
+
+/* Scroll barre */
+html {
+  scroll-timeline: --page-scroll block;
+    }
+
+    @keyframes grow-progress {
+        from { transform: scaleX(0); }
+        to { transform: scaleX(1); }
+    }
+
+    #progress {
+        position: fixed;
+        left: 0; top: 0;
+        width: 100%; height: 1em;
+        background: var(--blue);
+
+        transform-origin: 0 50%;
+        animation: grow-progress auto linear;
+        animation-timeline: --page-scroll;
+    }
