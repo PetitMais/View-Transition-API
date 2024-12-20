@@ -15,7 +15,8 @@ class CSSExemple extends HTMLElement {
             ou d'ignorer la transition si nécessaire. Cela offre un 
             contrôle précis pour créer des expériences visuelles fluides 
             et personnalisées dans les applications web.</p>
-
+        </section>
+        <section>
             <h2>Extensions à d'autres interfaces</h2>
             <p><code>document.startViewTransition()</code> est une méthode utilisée pour 
             lancer une transition visuelle fluide entre l'état actuel du DOM et 
@@ -38,7 +39,8 @@ class CSSExemple extends HTMLElement {
             l'état actuel et l'état cible. Cet événement fournit aussi des informations sur le type 
             de navigation (comme "suivant" ou "précédent") et les entrées d'historique du document 
             actuel et de celui vers lequel on navigue.</p>
-
+        </section>
+        <section>
             <h2>Ajouts HTML</h2>
             <p><code>link rel="expect"</code> est un attribut HTML qui aide à identifier le contenu le 
             plus critique du document pour la vue initiale de la page. En utilisant ce lien, le 
@@ -47,16 +49,15 @@ class CSSExemple extends HTMLElement {
             du rendu jusqu'à ce que le contenu essentiel soit chargé, ce qui améliore la performance et 
             réduit les délais de chargement pour une meilleure expérience utilisateur sur tous les 
             navigateurs compatibles.</p>
-
+        </section>
+        <section>
             <h2>Ajouts CSS</h2>
-
                 <h3>Règles AT</h3>
                 <p><code>@view-transition</code> est utilisée pour définir des transitions visuelles 
                 entre deux documents HTML lors de la navigation, comme lors d'un changement de page 
                 dans une application monopage (SPA). En utilisant @view-transition, vous pouvez spécifier 
                 comment le contenu de la page actuelle et de la nouvelle page doivent se fondre 
                 l'un dans l'autre visuellement.</p>
-
                 <h3>Propriétés</h3>
                 <p><code>view-transition-name</code> permet d'identifier un élément spécifique 
                 lors des transitions de vue dans une application monopage. En lui attribuant un nom 
@@ -65,7 +66,6 @@ class CSSExemple extends HTMLElement {
                 utilisée, l'élément ne participera pas aux transitions de vue, ce qui est utile pour 
                 isoler certains contenus ou éviter des animations indésirables. Cela permet d'avoir un 
                 contrôle plus fin sur le comportement des animations et des changements visuels sur la page.</p>
-
                 <h3>Pseudo-éléments</h3>
                 <p><code>::view-transition</code> agit comme la superposition de toutes les transitions 
                 de vue dans une application monopage (SPA). Elle contient toutes les animations et 
